@@ -13,6 +13,8 @@ RUN set -xe \
 
 RUN set -xe \
     && git clone https://github.com/vgoncharenko/google-page-speed.git \
-    && cp ./google-page-speed/bin/googlepagespeed /usr/bin/googlepagespeed
+    && go build google-page-speed/lib/googlepagespeed.go \
+    && mv googlepagespeed /usr/bin/googlepagespeed \
+    && chmod +x /usr/bin/googlepagespeed
 
 WORKDIR /root
