@@ -20,3 +20,4 @@ You can do all of this by next line:
     {"scenario_name":"Category page", "sub_url":"category-1.html"},
     {"scenario_name":"Product page", "sub_url":"simple-product-4.html"}
 ]
+All results will be stored in /root/googlepagespeed/
